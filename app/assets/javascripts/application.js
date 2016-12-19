@@ -14,3 +14,10 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+$(document).ready(function() {
+    $('#navbar').affix({
+        offset: {
+			top: $('header').height()
+		}
+	});	
+});
