@@ -1,6 +1,10 @@
 // Place all the styles related to the static-pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+  background-color: white;
+}
+
 #navbar.affix {
     position: fixed;
     top: 0;
@@ -10,5 +14,19 @@
 
 .message {
   margin: 0 auto;
-  background-color: hotpink;
+  margin-top: 200px;
+  margin-bottom: 200px;
+  text-align: center;
+  color: hotpink;
+}
+
+.message h1 {
+  font-size: 200px;
+}
+
+footer {
+  text-align: center;
+  height: 200px;
+  padding-left: 50px;
+  padding-top: 90px;
 }

@@ -3,8 +3,9 @@
   <head>
     <title>Railsapp</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <%= stylesheet_link_tag    'default', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'default', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag("application", :media => "all", "data-turbolinks-track" => true) %>
+    
+    <%= javascript_include_tag("application") %>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <!--[if lt IE 9]>
       <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
@@ -60,10 +61,17 @@
 	</nav>
 </div>
     
+    <div class="message">
+  <h1>CHANGE YOUR LIFE TODAY</h1>
+  <h2>No bullshit, just what you need to get in shape mentally and physically.</h2>
+</div>
+
+<%= image_tag("/assets/banana.jpg", alt: "banana", class: "img-responsive") %>
+    
   </body>
    <%= yield %>
   <footer>
-  &copy; 2016 MariamWithLove Georgia
+  &copy; 2016 MariamWithLove Georgia <i class="fa fa-heart" aria-hidden="true"></i>
   </footer>
   
 </html>
