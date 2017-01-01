@@ -52,3 +52,11 @@ end
 gem 'coffee-script-source', '1.8.0'
 
 gem 'font-awesome-sass'
+
+group :test, :production do
+  gem 'pg'
+end
+
+group :development do
+  gem 'sqlite3'
+end
