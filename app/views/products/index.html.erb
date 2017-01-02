@@ -1,3 +1,17 @@
+<div class="container-fluid">
+  <div class="row">
+    <% @products.each do |product| %>
+      <div class="col-sm-2 col-md-4">
+        <%= image_tag("/assets/banana.jpg", class: "img-responsive") %>
+        <h1>Bike 1</h1>
+        <p>Pretty cool bike</p>
+        <strong>$ 42</strong>
+      </div><!-- /col -->
+    <% end %>
+  </div>
+</div>
+
+
 <p id="notice"><%= notice %></p>
 
 <h1>Products</h1>
