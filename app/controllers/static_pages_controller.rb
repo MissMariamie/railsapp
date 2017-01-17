@@ -3,3 +3,7 @@ class StaticPagesController < ApplicationController
     @featured_product = Product.first
   end
 end
+
+def index
+  @products = Product.limit(3)
+end
