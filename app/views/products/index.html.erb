@@ -2,7 +2,7 @@
 <div class="container-fluid">
   <div class="row">
     <% @products.each do |product| %>
-        <%= image_tag("banana.jpg", :width => '400px', alt: "banana") %>
+        <%= image_tag(product.image_url) %>
         <h1>Bike 1</h1>
         <p>Pretty cool bike</p>
         <strong>$ 42</strong>
