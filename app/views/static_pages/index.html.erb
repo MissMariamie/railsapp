@@ -10,18 +10,18 @@
   <div class="carousel-inner" role="listbox">
      <% @products.each do |product| %>
     <div class="item<%= " active" if product == @products.first %>">
-      <%= image_tag('product.image') %>
+      <%= image_tag(product.image_url) %>
       <div class="carousel-caption">
-        <%= product.name %>
+            <%= product.name %>
       </div>
     </div>
     <div class="item">
       <!--<img src="..." alt="...">-->
-      <%= image_tag('2.png') %>
-      <div class="product.image">
-        <%= product.name %>
+      <%= image_tag(product.image_url) %>
+        <div class="carousel-caption">
+            <%= product.name %>
+        </div>
       </div>
-    </div>
     <% end %>
   </div>
 
